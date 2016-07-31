@@ -17,7 +17,7 @@ PROGRAM TEST_DISPMODULE
   ! Iceland (jonasson@hi.is). This software is free. For details see the file README.
 
   implicit none
-  integer, parameter :: verbose = 0  ! 0 = quiet
+  integer, parameter :: verbose = 2  ! 0 = quiet
   !                                  ! 1 = report only names of test routines
   !                                  ! 2 = report also what the tests display
   integer, parameter :: irange = 9   ! Run for irange = 2, 4, 9 and 18 for test of 1, 2, 4 and 8 byte integers
