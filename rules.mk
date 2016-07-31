@@ -19,7 +19,7 @@ APPDIR    = ./$(SRCDIR)
 TESTSDIR  = ./892/Fortran90/Drivers
 SUBDIR    = ./submodules
 
-TARGET = system
+TARGET = dispmodule
 
 LIBS = \
   $(LIBDIR)/lib$(TARGET).a
