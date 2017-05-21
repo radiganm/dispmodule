@@ -36,10 +36,10 @@ EXLIBS =
 INLIBS =
 LDFLAGS = -O2 $(ARCH) -g $(LIBPATH) $(EXLIBS) $(LIBS)
 
-%.oC11: %.cpp
+%.o: %.cpp
 	$(CCC) $(C11FLAGS) -c -o $@ $^
 
-%.oF90: %.f90
+%.o: %.f90
 	$(FC) -J$(FMODDIR) $(FFLAGS) -c -o $@ $^
 
 ## *EOF*

@@ -20,7 +20,7 @@ FSRC = \
   $(MODDIR)/disp_i8mod.f90 \
   $(MODDIR)/disp_l1mod.f90 \
   $(MODDIR)/disp_r16mod.f90 
-FOBJ = $(FSRC:.f90=.oF90)
+FOBJ = $(FSRC:.f90=.o)
 
 $(LIBDIR)/lib$(TARGET).a: $(FOBJ)
 	ar rvs $@ $^
