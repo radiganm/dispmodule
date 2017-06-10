@@ -5,6 +5,8 @@
 
 BLDDIR=.
 
+INSTALLDIR=/opt/local
+
 include ./rules.mk
 
 all: init libraries tests
@@ -20,6 +22,10 @@ clean:
 
 clobber:
 	$(MAKE) -f $(BLDDIR)/libraries.mk    $@
+
+install:
+	sudo mkdir -p $(INSTALLDIR)/lib && cp -f lib/* $(INSTALLDIR)/lib
+	sudo mkdir -p $(INSTALLDIR)/mod && cp -f mod/* $(INSTALLDIR)/mod
 
 init:
 	@-mkdir -p $(BINDIR)
