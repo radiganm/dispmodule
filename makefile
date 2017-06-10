@@ -23,9 +23,9 @@ clean:
 clobber:
 	$(MAKE) -f $(BLDDIR)/libraries.mk    $@
 
-install:
-	sudo mkdir -p $(INSTALLDIR)/lib && cp -f lib/* $(INSTALLDIR)/lib
-	sudo mkdir -p $(INSTALLDIR)/mod && cp -f mod/* $(INSTALLDIR)/mod
+install: init libraries
+	sudo mkdir -p $(INSTALLDIR)/lib && sudo cp -f lib/* $(INSTALLDIR)/lib
+	sudo mkdir -p $(INSTALLDIR)/mod && sudo cp -f mod/* $(INSTALLDIR)/mod
 
 init:
 	@-mkdir -p $(BINDIR)
