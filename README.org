@@ -1,5 +1,9 @@
 * Algorithm 892: DISPMODULE
 
+#+TITLE: Algorithm 892: DISPMODULE
+#+AUTHOR: Kristjan Jonasson, Dept. of Computer Science, University of Iceland
+#+SEE-ALSO: https://dl.acm.org/citation.cfm?id=1486531
+
 This is a fork of Algorithm 892: DISPMODULE, a Fortran 95 module for
 pretty-printing matrices.
 
